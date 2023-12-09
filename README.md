@@ -1,2 +1,2 @@
-# Web-development
-Webpages are created using HTML 
+# Web-Development
+Webpages are created using HTML and CSS
