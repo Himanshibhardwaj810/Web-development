@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSITIONS</title>
+</head>
+<style>
+    .state{
+        background: radial-gradient( rgb(234, 169, 196) , rgb(185, 144, 211));
+        width:500px;
+        height:500px;
+        font-size: 60px;
+        color: aliceblue;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100;
+        border: solid rgb(86, 9, 145) 20px;
+        border-radius: 1px 80px 80px 80px;
+        font-size: 80px;
+        padding: 150px;
+        margin-top: 20px;
+        margin-bottom: 80px;
+        margin-left: 300px;
+        margin-right: 50px;
+        width:1000px;
+        height:1px;
+
+        transition-property: all;
+        transition-duration: 5s;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+
+        
+    }
+
+    .state:hover{
+        width: 2000px;
+        height:1000px;
+        font-size: 200px;
+        text-shadow: 10px 10px 12px #000000;
+        background: radial-gradient( rgb(238, 38, 121) , rgb(102, 8, 161));
+        
+    }
+</style>
+
+<body>
+    <div class="state">
+        WELCOME TO THE WORLD OF TRANSITIONS
+    </div>
+
+</body>
+
+</html>
