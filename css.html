@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>CSS</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Internal CSS -->
+    <style>
+        /* element selector or type selector */
+        h1 {
+            color: purple;
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        h3 {
+            color: seagreen;
+        }
+        span{
+            font-size:27px;
+            background-color: aqua;
+        }
+
+        /* id selector */
+        #style {
+            background-color: plum;
+        }
+
+        /* Class selector */
+        .class1 {
+            background-color: aqua;
+        }
+
+        /* group selector */
+        p,
+        article {
+            font-size: 27px;
+        }
+
+        /* attribute selector */
+        a[href="https://www.w3schools.com/css/"] {
+            font-size: 30px;
+        }
+
+        /* pseudo class selector */
+        p::first-line {
+            background-color: yellowgreen;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inline CSS -->
+    <h1 style="text-align: center;">CASCADING STYLE SHEETS</h1>
+    <p style="background-color: lightblue;">
+        CSS, or Cascading Style Sheets, is a stylesheet language used for describing the presentation and
+        layout of web pages written in HTML and XML. CSS allows web designers and developers to control the
+        visual appearance of web content, including elements like text, images, backgrounds, and more.
+    </p>
+    <a href="https://www.w3schools.com/css/" target="_blank">=>EXPLORE CSS</a>
+    <h2 style="text-align: center;">Types of CSS</h2>
+    <h3>Inline CSS</h3>
+    <p id="style">
+        Inline CSS is applied directly to individual HTML elements using the style attribute. The styles are
+        defined within the HTML element itself. The styles are defined within the HTML element itself.
+    </p>
+    <span style="background-color: lightblue;">
+        <ul type="disc">
+            <li>It has the highest specificity, meaning it can override conflicting styles from other sources.</li>
+            <li>It is not suitable for styling multiple elements consistently because it's applied individually.</li>
+            <li>Changes to inline CSS are scoped to the specific element.</li>
+        </ul>
+    </span>
+
+    <h3>Internal CSS</h3>
+    <p id="style">
+        Internal CSS is defined within the HTML document using a style element within the head section.
+        This method allows you to define styles for the <br>
+        specific HTML document.
+    </p>
+    <span>
+        <ul type="disc">
+            <li>Internal CSS allows you to define styles for multiple elements within the same HTML document.</li>
+            <li>It has a medium specificity, allowing it to override external styles but not inline styles.</li>
+            <li>Changes are scoped to the entire HTML document.</li>
+        </ul>
+    </span>
+
+    <h3>External CSS</h3>
+    <p id="style">
+        External CSS is the most common method. It involves creating a separate CSS file (with a .css extension)
+        and linking it to an HTML document<br>
+        using the link element within the head section.
+    </p>
+    <span>
+        <ul type="disc">
+            <li>It has a lower specificity compared to inline and internal CSS, making it the easiest to override.</li>
+            <li>Changes are applied globally across all HTML documents linked to the same external CSS file.</li>
+            <li>External CSS allows you to define and maintain styles in separate files, making it easier to manage
+                and reuse styles across multiple pages.</li>
+        </ul>
+    </span>
+    <br><br>
+
+    <article class="class1">
+        CSS (Cascading Style Sheets) is of paramount importance in web development, even in small-scale projects.
+        It plays a pivotal role in enhancing the visual appeal and functionality of web pages. CSS allows for
+        the separation of content and presentation, which is crucial for maintaining clean and structured code.
+        It empowers designers and developers to customize the look and layout of web elements, making it possible
+        to create engaging and user-friendly websites.
+    </article>
+</body>
+
+</html>
+
+
